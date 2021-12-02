@@ -6,12 +6,16 @@ body {
     margin: 0;
 }
 
-button {
-    border-radius: 5px;
+.button {
+    border-radius: 12px;
     background: #9c540c;
-    padding:7px;
+    padding: 8px 12px; /* margen interno */
     color: white;
+    cursor: pointer;
+    font-size: 16px;
     border: none;
+    text-decoration: none;
+    background: linear-gradient(to left, #7c430a, #dd944c); /* degradado de color */
 }
 
 label {
@@ -28,19 +32,30 @@ input:focus, textarea:focus {
     background: #fce3ce;
 }
 
-input[type='radio']:checked::after {
+input[type='radio']:checked:after {
     width:10px;
     height:10px;
     border-radius: 15px;
     position: relative;
-    top: 0;
-    left: 0;
     background-color: #836123;
     content: '';
     display:inline-block;
     visibility: visible;
     border:2px solid white;
 }
+
+input[type='checkbox']:checked:after {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background: #977639;
+    content: '';
+    border: 2px solid white;
+    visibility: visible;
+    display: inline-block;
+}
+
+
 /* una buena practica tener estilos centralizados */
 .contenedor {
     width: 800px;
@@ -82,11 +97,7 @@ input[type='radio']:checked::after {
     background-size: cover;
     color: white;
     padding: 20px;
-}
-
-.portada button {
-    margin-bottom: 70px;
-
+    height: 500px;
 }
 
 .menu {
@@ -108,6 +119,10 @@ input[type='radio']:checked::after {
 
 .logotipo {
     display: inline-block;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin-left: 0;
+    margin-top: -12px;
 }
 
 .header {
@@ -120,11 +135,12 @@ input[type='radio']:checked::after {
 }
 
 .cafe {
-    border: 1px solid #412B19;
-    margin: 10px;
+     /* border: 1px solid #412B19; */
+    margin: 10px 10px 40px 10px;
     padding: 10px;
     /*overflow: hidden;  para que la imagen no se desborde*/
     border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4); /* sombra desenfoque, expasión */
 }
 
 .cafe ol {
@@ -155,7 +171,7 @@ input[type='radio']:checked::after {
 .contenedor-cafe-b {
     margin-left: 370px;
     position:relative; 
-    bottom: 115px;
+    bottom: 85px;
 }
 
 .contacto {
@@ -188,7 +204,7 @@ input[type='radio']:checked::after {
     display: flex;
     color: white;
     width: 400px;
-    padding: 50px 10px; /* esto todo esto: padding-top: 50px; padding-bottom: 50px; padding-left:10px; padding-right: 10px; */
+    /* padding: 50px 10px; */ /* esto todo esto: padding-top: 50px; padding-bottom: 50px; padding-left:10px; padding-right: 10px; */
 }
 
 /* vamos a darle clases a las 2 clomumnas */
