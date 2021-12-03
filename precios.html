@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--header-->
-    <header id="header" class="header contenedor">
+    <header id="header" class="header background-general">
 
         <figure class="logotipo"> 
           <!--logo tipo-->
@@ -32,5 +32,111 @@
     </nav>
   
   </header>
+
+  <!--header-->
+
+  <!--contenido-->
+  <main>
+
+    <section class="tabla">
+      <div class="contenedor">
+        <div class="titulo-precio">
+          <span>Precios CafeTime</span>
+          <img src="img/coffetimeprecios1.png" alt="" width="100">
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td>Capucchino <br> <i>Sabor Intenso y esquisito</i></td>
+              <td> <div class="precio">$1000</div></td>
+            </tr>
+
+            <tr>
+              <td>Mocachino <br> <i>Delicioso cafe con sabor chocolate</i></td>
+              <td> <div class="precio">$850</div></td>
+            </tr>
+
+            <tr>
+              <td>Vainilla Late <br> <i>Cremoso y delicioso cafe con sabor a Vainilla</i></td>
+              <td> <div class="precio">$850</div></td>
+            </tr>
+
+            <tr>
+              <td>frappe<br> <i>Cremoso y delicioso cafe con sabor a Vainilla</i></td>
+              <td><div class="precio">$850</div></td>
+            </tr>
+
+            <tr>
+              <td>Machiato <br> <i>Cremoso y delicioso cafe con sabor a Vainilla</i></td>
+              <td><div class="precio">$850</div></td>
+            </tr>
+
+            <tr>
+              <td>Americano <br> <i>Cremoso y delicioso cafe con sabor a Vainilla</i></td>
+              <td><div class="precio">$850</div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+ 
+  <!-- Footer -->
+  <footer class="footer" >
+    <div class="contenedor">
+      
+      <div class="contacto">
+        <img src="img/imagenfooter.png" alt="imagen footer" width="300" />
+  
+        <a href="tel:+569954587415"> <strong>Teléfono</strong> <span>9545874</span></a>
+  
+        <a href="mailto:contacto@cafetime.cl"> <strong>E-mail</strong> <span>contacto@cafetime.cl</span> </a>
+      </div>
+
+      <form class="formulario">
+
+        <div class="col1">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required name="nombre" />
+  
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required name="email" />
+  
+          <div class="generos">
+            <label for="mujer">
+              <input type="radio" id="mujer" name="genero" value="mujer" required> Mujer
+            </label>
+  
+            <label for="hombre">
+              <input type="radio" id="hombre" name="genero" value="hombre" required> Hombre
+            </label>
+          </div>
+  
+          <div class="intereses">
+
+            <label for="cotizacion">
+              <input type="checkbox" id="cotizacion" name="intereses[]" value="cotizacion"> Cotización
+            </label>
+  
+            <label for="reclamos">
+              <input type="checkbox" id="reclamos" name="intereses[]" value="reclamos"> Reclamos
+            </label>
+  
+            <label for="observaciones">
+              <input type="checkbox" id="observaciones" name="intereses[]" value="observaciones"> Observaciones
+            </label>
+  
+            <label for="otros">
+              <input type="checkbox" id="otros" name="intereses[]" value="otros"> Otros
+            </label>
+          </div>
+        
+        </div>
+  
+        <div class="col2">
+          <label for="comentarios">Comentarios</label>
+          <textarea name="" id="comentarios" cols="30" rows="7"></textarea>
+          <input class="button" type="submit" value="Enviar">
+        </div>
 </body>
 </html>

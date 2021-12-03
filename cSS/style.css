@@ -2,6 +2,9 @@
 font-family: 'Montserrat', sans-serif; */
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Allerta', sans-serif;
     margin: 0;
 }
@@ -58,10 +61,17 @@ input[type='checkbox']:checked:after {
 
 /* una buena practica tener estilos centralizados */
 .contenedor {
+    position: relative;
     width: 800px;
     margin: auto; 
 }
 
+.background-general {
+    background: #c93623;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.4);
+    height: 85px;
+    color:white; 
+}
 .titulo {
     font-family: 'Montserrat', sans-serif;
     font-size: 70px;
@@ -203,7 +213,7 @@ input[type='checkbox']:checked:after {
 .formulario {
     display: flex;
     color: white;
-    width: 400px;
+    width: 444px;
     /* padding: 50px 10px; */ /* esto todo esto: padding-top: 50px; padding-bottom: 50px; padding-left:10px; padding-right: 10px; */
 }
 
@@ -238,3 +248,54 @@ input[type='checkbox']:checked:after {
     margin-top: 10px;
     font-size: 12px;
 }
+
+/*tablas */
+
+table {
+    width: 100%; /* toma el 100% de tu padre contenedor que tiene los 800px */
+    margin-bottom: 60px;
+}
+
+th {
+    background: #3a2b29;
+    color: white;
+    padding: 10px 20px;
+}
+td{
+    padding: 20px;
+}
+
+table, td, th {
+    /*border: 1px solid #C29B61; */
+    border:0;
+    /*border-collapse: collapse; */
+}
+
+i {
+    font-size: 15px;
+}
+.precio {
+    border-radius: 50%;
+    padding: 15px 7px;
+    font-size: 12px;
+    width: 35px;
+    text-align: center;
+    background: #9c540c;
+    color: white;
+}
+
+.titulo-precio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #3a2b29;
+    font-size: 45px;
+    font-family: 'Pacifico', cursive;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.tabla {
+    margin: 50px 0;
+}
+
+
