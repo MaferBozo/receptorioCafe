@@ -1,4 +1,19 @@
-/* INICIO DE TABLET */
+.burguer-buton {
+  width: 40px;
+  border-radius: 50%;
+  line-height: 35px;
+  background: #dd944c;
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  position: fixed; /* que el elmento nos siga a todos lados */
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+}
+  
+  
+  /* INICIO DE TABLET */
 
 /* 768 para tables y esta dentro de los 800px que vamos a trabajar */
 @media screen and (max-width: 800px) {
@@ -143,11 +158,34 @@
   @media screen and (max-width: 500px) {
   
     /* PORTADA */
+    .portada .button {
+      display: block;
+    }
+    .portada .contenedor {
+      position: static;
+    }
+
+    .menu {
+      border:1px solid #ff6347;
+      position: absolute;bottom: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 2;
+      background-color: rgb(156, 84, 12, .8);
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
     .menu li {
       display: block;
       margin: 0;
       padding: 8px 0;
       border-bottom: 1px solid white;
+    }
+
+    .menu ul {
+      flex: 1;/* hace que los item home, cafe y precios tomen el ancho de la pantalla */
     }
   
     .menu li:first-child {
